@@ -203,8 +203,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* BURGER MENU MOBILE */
   .nav-burger{display:none;background:var(--toggle-bg);border:1px solid var(--border);border-radius:8px;padding:5px 10px;cursor:pointer;font-size:15px;color:var(--text);}
-  .mobile-menu{display:none;flex-direction:column;position:fixed;top:56px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--border);z-index:199;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:0;overflow:hidden;transition:max-height .3s ease;}
-  .mobile-menu.open{max-height:400px;}
+  .mobile-menu{display:flex;flex-direction:column;position:fixed;top:56px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--border);z-index:199;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:0;overflow:hidden;transition:max-height .3s ease;visibility:hidden;}
+  .mobile-menu.open{max-height:400px;visibility:visible;}
   .mobile-menu a{padding:14px 20px;color:var(--text);text-decoration:none;font-size:14px;border-bottom:1px solid var(--border);}
   .mobile-menu a:last-child{border-bottom:none;}
   .mobile-menu a:active{background:var(--progress-track);}
